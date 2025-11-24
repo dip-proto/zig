@@ -721,7 +721,7 @@ fn ktSingleThreaded(comptime Variant: type, view: *const MultiSliceView, total_l
             Variant.turboShakeToBuffer(&cv_slice, 0x0B, cv_buffer[0..cv_size]);
             final_state.update(cv_buffer[0..cv_size]);
         }
-        j += chunk_size;
+        j += chunk_len;
         n += 1;
     }
 
