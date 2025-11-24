@@ -15,7 +15,7 @@ permissions:
 jobs:
   x86_64-linux-debug:
     timeout-minutes: 540
-    runs-on: [self-hosted, Linux, x86_64]
+    runs-on: [Linux, x86_64]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,7 +25,7 @@ jobs:
         run: sh ci/x86_64-linux-debug.sh
   x86_64-linux-debug-llvm:
     timeout-minutes: 540
-    runs-on: [self-hosted, Linux, x86_64]
+    runs-on: [Linux, x86_64]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -35,7 +35,7 @@ jobs:
         run: sh ci/x86_64-linux-debug-llvm.sh
   x86_64-linux-release:
     timeout-minutes: 540
-    runs-on: [self-hosted, Linux, x86_64]
+    runs-on: [Linux, x86_64]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
